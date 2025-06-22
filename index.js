@@ -61,7 +61,7 @@ app.post('/api/notes', (request, response) => {
 
     const note = {
         content: body.content,
-        import: body.important || false,
+        important: body.important || false,
         id: generateId(),
     }
 
